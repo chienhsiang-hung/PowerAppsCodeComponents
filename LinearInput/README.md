@@ -24,3 +24,5 @@ error  'EventListenerOrEventListenerObject' is not defined  no-undef
 ```ts
 private myButtonHandler: EventListener; // eslint-disable-line
 ```
+### Or Steps
+[eslint rules may impact your build](https://learn.microsoft.com/en-us/power-apps/developer/component-framework/implementing-controls-using-typescript?tabs=after#build-your-code-components)
