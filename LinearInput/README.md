@@ -19,3 +19,8 @@ error  'EventListenerOrEventListenerObject' is not defined  no-undef
     button.addEventListener("click", this.buttonClick);
 4. update method "destroy" to remove event listener i.e. 
     this.container.querySelector("button")!.removeEventListener("click", this.buttonClick);
+
+#### Add a comment at the end of your code to skip the eslint check
+```ts
+private myButtonHandler: EventListener;// eslint-disable-line
+```
