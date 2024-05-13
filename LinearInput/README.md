@@ -22,5 +22,5 @@ error  'EventListenerOrEventListenerObject' is not defined  no-undef
 
 #### Add a comment at the end of your code to skip the eslint check
 ```ts
-private myButtonHandler: EventListener;// eslint-disable-line
+private myButtonHandler: EventListener; // eslint-disable-line
 ```
