@@ -8,7 +8,7 @@ export class LinearInputControl implements ComponentFramework.StandardControl<II
     private _container: HTMLDivElement;
     private _context: ComponentFramework.Context<IInputs>;
     // private _refreshData: EventListenerOrEventListenerObject;
-    private _refreshData: EventListener;// eslint-disable-line
+    private _refreshData: EventListener; // eslint-disable-line
 
     /**
      * Empty constructor.
