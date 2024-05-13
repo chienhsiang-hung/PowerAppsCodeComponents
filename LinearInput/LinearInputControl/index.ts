@@ -1,7 +1,13 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 
 export class LinearInputControl implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-
+    private _value: number;
+    private _notifyOutputChanged: () => void;
+    private labelElement: HTMLLabelElement;
+    private inputElement: HTMLInputElement;
+    private _container: HTMLDivElement;
+    private _context: ComponentFramework.Context<IInputs>;
+    private _refreshData: EventListenerOrEventListenerObject;
     /**
      * Empty constructor.
      */
