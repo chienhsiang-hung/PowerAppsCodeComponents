@@ -21,7 +21,7 @@
       <type>Currency</type>
       <type>FP</type>
       <type>Decimal</type>
-    <type-group>
+    </type-group>
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="controlValue"
       display-name-key="Control Value"
