@@ -7,7 +7,9 @@ export class LinearInputControl implements ComponentFramework.StandardControl<II
     private inputElement: HTMLInputElement;
     private _container: HTMLDivElement;
     private _context: ComponentFramework.Context<IInputs>;
-    private _refreshData: EventListenerOrEventListenerObject;
+    // private _refreshData: EventListenerOrEventListenerObject;
+    private _refreshData: EventListener;// eslint-disable-line
+
     /**
      * Empty constructor.
      */
@@ -30,7 +32,8 @@ export class LinearInputControl implements ComponentFramework.StandardControl<II
         this._context = context;
         this._container = document.createElement("div");
         this._notifyOutputChanged = notifyOutputChanged;
-        this._refreshData = this.refreshData.bind(this);
+        // this._refreshData = this.refreshData.bind(this);
+        this._refreshData = this._refreshData.bind(this);
 
         // creating HTML elements for the input type range and binding it to the function which 
         // refreshes the control data
